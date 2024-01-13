@@ -18,4 +18,6 @@ public class ApplicationDbContext : IdentityDbContext<ApiUser>
 
         builder.ApplyConfiguration(new RoleConfiguration());
     }
+
+    public DbSet<RefreshToken> RefreshTokens { get; set; }
 }
